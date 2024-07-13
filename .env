@@ -1,0 +1,3 @@
+SERVICE_ID=service_qse78lr
+TEMPLATE_ID=template_oaibfew
+PUBLIC_KEY=Rgs_3yRDKkRN9-mxl
