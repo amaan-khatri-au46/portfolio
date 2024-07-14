@@ -11,7 +11,7 @@ import { useAppDispatch, useAppSelector } from "@/store";
 import { setIsPlayingMusic } from "@/store/slices/folioSlice";
 
 export const Home = () => {
-  const { currentStage, isRotating, isPlayingMusic } = useAppSelector(
+  const { currentStage, isRotating, isPlayingMusic, theme } = useAppSelector(
     (state) => state.folioDetail
   );
   const dispatch = useAppDispatch();
@@ -50,9 +50,9 @@ export const Home = () => {
         {currentStage && <ProfileInfo />}
       </div>
       <Canvas
-        className={`w-full h-screen bg-transparent ${
+        className={`w-full h-screen  ${
           isRotating ? "cursor-grabbing" : "cursor-grab"
-        }`}
+        } ${theme == "dark-theme" ? "bg-[#333] " : "bg-transparent"}`}
         camera={{ near: 0.1, far: 1000 }}
         frameloop="always"
       >
@@ -72,7 +72,7 @@ export const Home = () => {
             intensity={1}
           />
           <Bird />
-          <Sky />
+          {theme === "light-theme" && <Sky />}
           <Island />
           <Plane
             position={biplanePosition}

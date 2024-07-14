@@ -32,7 +32,6 @@ export const About = () => {
       </div>
       <div className="py-10 flex flex-col">
         <h3 className="text-[18px] font-semibold">My Skills</h3>
-
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill: any) => (
             <div

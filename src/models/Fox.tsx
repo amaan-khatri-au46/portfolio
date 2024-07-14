@@ -25,38 +25,48 @@ export const Fox: React.FC<FoxProps> = ({ currentAnimation, ...props }) => {
   }, [actions, currentAnimation]);
 
   return (
-    <group ref={group} {...props}>
-      <group name="Sketchfab_Scene">
+    <group ref={group} {...props} castShadow receiveShadow>
+      <group name="Sketchfab_Scene" castShadow receiveShadow>
         <primitive object={nodes?.GLTF_created_0_rootJoint} />
         <skinnedMesh
           name="Object_7"
           geometry={nodes?.Object_7?.geometry}
           material={materials?.PaletteMaterial001}
           skeleton={nodes?.Object_7?.skeleton}
+          castShadow
+          receiveShadow
         />
         <skinnedMesh
           name="Object_8"
           geometry={nodes?.Object_8?.geometry}
           material={materials?.PaletteMaterial001}
           skeleton={nodes?.Object_8?.skeleton}
+          castShadow
+          receiveShadow
         />
         <skinnedMesh
           name="Object_9"
           geometry={nodes?.Object_9?.geometry}
           material={materials?.PaletteMaterial001}
           skeleton={nodes?.Object_9?.skeleton}
+          castShadow
+          receiveShadow
         />
         <skinnedMesh
           name="Object_10"
           geometry={nodes?.Object_10?.geometry}
           material={materials?.PaletteMaterial001}
           skeleton={nodes?.Object_10?.skeleton}
+          castShadow
+          receiveShadow
         />
         <skinnedMesh
           name="Object_11"
           geometry={nodes?.Object_11?.geometry}
           material={materials?.PaletteMaterial001}
           skeleton={nodes?.Object_11?.skeleton}
+          castShadow
+          receiveShadow
         />
       </group>
     </group>

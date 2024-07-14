@@ -18,7 +18,7 @@ const initialState: FolioDetailState = {
   isPlayingMusic: false,
   birdPostion: [-5, 2, 1],
   birdScale: [0.003, 0.003, 0.003],
-  theme: "light-theme",
+  theme: "dark-theme",
 };
 
 const folioListSlice = createSlice({
