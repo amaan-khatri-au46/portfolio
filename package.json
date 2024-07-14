@@ -4,8 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "rm -rf .parcel-cache && parcel public/index.html --port 3000",
-    "build": "rm -rf .parcel-cache && parcel build public/index.html"
-  },
+    "build": "rm -rf .parcel-cache && parcel build public/index.html",
+    "postbuild": "cp public/_redirects dist/_redirects"
+  },  
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@parcel/transformer-raw": "^2.12.0",
