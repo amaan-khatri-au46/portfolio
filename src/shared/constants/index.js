@@ -118,7 +118,7 @@ export const experiences = [
     project_name: "Chrome Extention",
     icon: sarvadhi,
     iconBg: "#accbe1",
-    date: "March 2020 - April 2021",
+    date: "May 2023 - July 2023",
     points: [
       "Developed a LinkedIn Chrome Extension: Created a user interface for a Chrome extension that allows users to fetch LinkedIn profile data and generate personalized messages using ChatGPT.",
       "Implemented Data Fetching Mechanism: Added a Fetch User button on LinkedIn profiles to send the profile link to an API, retrieving user data for message generation.",
@@ -128,10 +128,21 @@ export const experiences = [
   },
   {
     title: "ReactJs Developer - Sarvadhi",
+    project_name: "Stock Market",
+    icon: sarvadhi,
+    iconBg: "#accbe1",
+    date: "Aug 2023 - Oct 2023",
+    points: [
+      "Implemented Real-Time Data Updates: Configured Socket.IO to fetch and display real-time stock market data. Ensured that the user interface dynamically updates with the latest information, providing users with accurate and timely data listings.",
+      "Developed Global Search Functionality: Created a global search feature that efficiently searches and filters data within the stock market tables. Enhanced user experience by enabling quick and easy access to specific stock information through an intuitive search interface.",
+    ],
+  },
+  {
+    title: "ReactJs Developer - Sarvadhi",
     project_name: "Crm - Customer Relation Management",
     icon: sarvadhi,
     iconBg: "#accbe1",
-    date: "Jan 2021 - Feb 2022",
+    date: "Nov 2023 - Feb 2024",
     points: [
       "Developed Dynamic Tables: Utilized React JS and TypeScript to create dynamic and interactive tables for managing customer data efficiently. Ensured seamless data storage and retrieval, providing a user-friendly interface for data manipulation.",
       "Role-Based Routing Management: Implemented routing logic using React Router, tailored to user roles (Admin and User). Ensured that specific routes and features were accessible based on role permissions, enhancing security and usability.",
@@ -140,21 +151,10 @@ export const experiences = [
   },
   {
     title: "ReactJs Developer - Sarvadhi",
-    project_name: "Stock Market",
-    icon: sarvadhi,
-    iconBg: "#accbe1",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Implemented Real-Time Data Updates: Configured Socket.IO to fetch and display real-time stock market data. Ensured that the user interface dynamically updates with the latest information, providing users with accurate and timely data listings.",
-      "Developed Global Search Functionality: Created a global search feature that efficiently searches and filters data within the stock market tables. Enhanced user experience by enabling quick and easy access to specific stock information through an intuitive search interface.",
-    ],
-  },
-  {
-    title: "ReactJs Developer - Sarvadhi",
     project_name: "Pure You Jewellery",
     icon: sarvadhi,
     iconBg: "#accbe1",
-    date: "Jan 2021 - Feb 2022",
+    date: "March 2024 - May 2024",
     points: [
       "Implemented Interactive Image Carousel: Developed a carousel feature to display images dynamically. Enabled smooth auto-scrolling functionality upon clicking, ensuring a seamless and engaging user experience while navigating through product images.",
       "Managed Persistent Filter Data: Participated in the filtration process by implementing Redux and Redux Persist to handle filter data. Ensured that filter settings remain intact even after page refreshes, providing a consistent and reliable user experience.",
@@ -165,7 +165,7 @@ export const experiences = [
     project_name: "Hind Money - Mutal Funds",
     icon: freshcodes,
     iconBg: "#5399f6",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2024 - July 2024",
     points: [
       "Developed Interactive Charts: Utilized the ApexCharts library to create dynamic and interactive charts displaying mutual fund performance across fiscal years. Provided users with clear and insightful visual representations of financial data.",
       "Optimized API Usage: Implemented strategies to minimize API calls across the application, enhancing performance and reducing server load. Ensured efficient data fetching and management to improve overall user experience.",
