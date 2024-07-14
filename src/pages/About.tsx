@@ -6,6 +6,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Cta } from "@/components/Cta.js";
+import { Suspense } from "react";
+import { Loader } from "@/shared/components/Loader.js";
 
 export const About = () => {
   const { theme } = useAppSelector((state) => state.folioDetail);
@@ -30,6 +32,7 @@ export const About = () => {
       </div>
       <div className="py-10 flex flex-col">
         <h3 className="text-[18px] font-semibold">My Skills</h3>
+
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill: any) => (
             <div
@@ -38,11 +41,13 @@ export const About = () => {
             >
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center cursor-pointer">
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className="w-1/2 h-1/2 object-contain"
-                />
+                <Suspense fallback={<Loader />}>
+                  <img
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </Suspense>
               </div>
             </div>
           ))}
